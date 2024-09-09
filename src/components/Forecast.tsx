@@ -22,13 +22,17 @@ const Forecast: React.FC<ForecastProps> = ({ city }) => {
         display="flex"
         justifyContent="center"
         mt={2}
+        flexWrap="wrap"
         sx={{
           flexDirection: { xs: "column", sm: "row" },
           alignItems: { xs: "center", sm: "flex-start" },
         }}
       >
         {data.forecast.forecastday.map((day: ForecastDay) => (
-          <Card key={day.date} style={{ margin: "0 10px", maxWidth: 200 }}>
+          <Card
+            key={day.date}
+            sx={{ margin: { xs: "10px 0", sm: "0 10px" }, width: 200 }}
+          >
             <CardContent>
               <Typography variant="h6">{day.date}</Typography>
               <img src={day.day.condition.icon} alt={day.day.condition.text} />
