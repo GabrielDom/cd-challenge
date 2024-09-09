@@ -1,6 +1,6 @@
-# Nombre del Proyecto
+# Chaindots challenge
 
-Chaindots challenge: https://cd-challenge.netlify.app/
+https://cd-challenge.netlify.app/
 
 ## Instalación
 
