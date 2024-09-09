@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+# Nombre del Proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chaindots challenge: https://cd-challenge.netlify.app/
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (versión X.X.X)
+- npm (versión X.X.X) o yarn (versión X.X.X)
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clona el repositorio:
 
-- Configure the top-level `parserOptions` property like this:
+   ```sh
+   git clone https://github.com/GabrielDom/cd-challenge.git
+   cd tu-repositorio
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+   ```
+
+2. Instalar dependencias:
+
+```sh
+npm install
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Ejecutar:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```sh
+npm run dev
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```
+
+## Configuración de la API
+
+Este proyecto utiliza RapidAPI para obtener datos. Necesitarás una clave API de RapidAPI.
+
+Regístrate en RapidAPI si aún no tienes una cuenta.
+
+Una vez logueado en RapidAPI, ingresar a Apps para la configuración de la aplicación.
+
+Seleccionar la opcion Add New App y completar el formulario.
+
+Ve a la API WeatherAPI.com y suscríbete al plan free.
+
+Copia tu clave API.
+
+Crea un archivo .env en la raíz del proyecto y agrega tu clave API:
+
+VITE_API_KEY=tu_clave_api
+VITE_URL_BASE="https://weatherapi-com.p.rapidapi.com"
+VITE_API_HOST="weatherapi-com.p.rapidapi.com"
+
+```
+
 ```

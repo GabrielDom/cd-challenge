@@ -4,7 +4,7 @@ import CitySearch from "./components/CitySearch";
 function App() {
   return (
     <>
-      <h1>ChainDots Challenge</h1>
+      <h1 style={{ marginTop: 0 }}>ChainDots Challenge</h1>
       <CitySearch />
     </>
   );
