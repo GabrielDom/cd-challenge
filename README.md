@@ -2,11 +2,6 @@
 
 Chaindots challenge: https://cd-challenge.netlify.app/
 
-## Requisitos
-
-- Node.js (versión X.X.X)
-- npm (versión X.X.X) o yarn (versión X.X.X)
-
 ## Instalación
 
 1. Clona el repositorio:
