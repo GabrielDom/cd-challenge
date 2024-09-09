@@ -18,7 +18,15 @@ const Forecast: React.FC<ForecastProps> = ({ city }) => {
   return (
     <Box>
       <Typography variant="h5">Forecast</Typography>
-      <Box display="flex" justifyContent="center" mt={2}>
+      <Box
+        display="flex"
+        justifyContent="center"
+        mt={2}
+        sx={{
+          flexDirection: { xs: "column", sm: "row" },
+          alignItems: { xs: "center", sm: "flex-start" },
+        }}
+      >
         {data.forecast.forecastday.map((day: ForecastDay) => (
           <Card key={day.date} style={{ margin: "0 10px", maxWidth: 200 }}>
             <CardContent>
